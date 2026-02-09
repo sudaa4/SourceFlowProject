@@ -16,19 +16,23 @@ export default function Hero() {
         style={{ backgroundColor: "#FCDF69" }}
       ></div>
 
-      <div className="relative max-w-7xl mx-auto px-8 grid grid-cols-2 items-center gap-10">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         
         {/* Left: Search area */}
-        <div>
-          <h1 className="text-4xl font-bold mb-6">
+        <div className="text-center md:text-left">
+          <h2 className="text-xl text-gray-300 mb-2">
+            Software Recruitment Specialists
+          </h2>
+
+          <h1 className="text-3xl sm:text-4xl font-bold mb-6">
             Elevate your Career
           </h1>
 
-          <div className="bg-white rounded-lg p-4 flex">
+          <div className="bg-white rounded-lg p-4 flex flex-col sm:flex-row gap-4">
             <input
               type="text"
               placeholder="Search job roles, skills, or companies"
-              className="flex-1 px-4 py-2 text-gray-700 outline-none"
+              className="flex-1 px-4 py-2 text-gray-700 outline-none rounded-md"
             />
             <button
               className="px-6 py-2 rounded-md text-white hover:brightness-110"
@@ -40,11 +44,11 @@ export default function Hero() {
         </div>
 
         {/* Right: Image */}
-        <div>
+        <div className="mt-10 md:mt-0 flex justify-center md:justify-end">
           <img
-            src="src\assets\2a5555ba9e7463bd63b976b8b0101bf9fc4e0467.jpg" 
+            src="src/assets/2a5555ba9e7463bd63b976b8b0101bf9fc4e0467.jpg" 
             alt="Hero illustration"
-            className="w-full"
+            className="w-full max-w-md md:max-w-full rounded-3xl"
           />
         </div>
 
@@ -52,4 +56,5 @@ export default function Hero() {
     </section>
   );
 }
+
 
