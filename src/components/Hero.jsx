@@ -24,7 +24,7 @@ export default function Hero() {
             Software Recruitment Specialists
           </h2>
 
-          <h1 className="text-3xl sm:text-4xl font-bold mb-6">
+          <h1 className="text-5xl font-bold text-white mb-6 animate-fadeUp">
             Elevate your Career
           </h1>
 
