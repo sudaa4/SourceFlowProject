@@ -46,7 +46,7 @@ export default function Hero() {
         {/* Right: Image */}
         <div className="mt-10 md:mt-0 flex justify-center md:justify-end">
           <img
-            src="public/2a5555ba9e7463bd63b976b8b0101bf9fc4e0467.jpg" 
+            src="/2a5555ba9e7463bd63b976b8b0101bf9fc4e0467.jpg" 
             alt="Hero illustration"
             className="w-full max-w-md md:max-w-full rounded-3xl  animate-[slideInRight_0.8s_ease-out_forwards]"
           />

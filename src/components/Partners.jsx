@@ -1,28 +1,28 @@
 export default function Partners() {
   const logos = [
     {
-      src: "public/microsoft.jpg",
+      src: "/microsoft.jpg",
       alt: "Microsoft Logo",
       link: "https://www.microsoft.com", // redirect link
     },
     {
-      src: "public/Oracle.png",
+      src: "/Oracle.png",
       alt: "Oracle Logo",
       link: "https://www.oracle.com/asean/",
     },
     {
-      src: "public/salesforce.png",
+      src: "/salesforce.png",
       alt: "salesforce Logo",
       link: "https://www.salesforce.com/ap/",
     },
     {
-      src: "public/cloudfare.png",
+      src: "/cloudfare.png",
       alt: "Cloudflare Logo",
       link: "https://www.cloudflare.com/",
     },
     {
-      src: "public/vmware.png",
-      alt: "Company 5 Logo",
+      src: "/vmware.png",
+      alt: "VMWare Logo",
       link: "https://www.vmware.com",
     },
   ];
