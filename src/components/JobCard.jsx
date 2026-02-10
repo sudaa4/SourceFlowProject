@@ -7,9 +7,7 @@ const variants = {
 export default function JobCard({ job }) {
   return (
     <div className="bg-white rounded-2xl shadow-lg p-6 hover:-translate-y-2 transition">
-      <h3 className="text-xl font-bold text-blue-900 mb-2 
-  transition-colors duration-300
-  group-hover:text-blue-700">
+      <h3 className="text-xl font-bold text-blue-900 mb-2 transition-colors duration-300 group-hover:text-blue-700">
         {job.title}
       </h3>
 

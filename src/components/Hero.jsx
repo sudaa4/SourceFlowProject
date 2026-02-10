@@ -24,7 +24,7 @@ export default function Hero() {
             Software Recruitment Specialists
           </h2>
 
-          <h1 className="text-5xl font-bold text-white mb-6 animate-fadeUp">
+          <h1 className="opacity-0 animate-[fadeIn_0.8s_ease-out_forwards] text-4xl font-bold mb-6">
             Elevate your Career
           </h1>
 
@@ -46,9 +46,9 @@ export default function Hero() {
         {/* Right: Image */}
         <div className="mt-10 md:mt-0 flex justify-center md:justify-end">
           <img
-            src="src/assets/2a5555ba9e7463bd63b976b8b0101bf9fc4e0467.jpg" 
+            src="public/2a5555ba9e7463bd63b976b8b0101bf9fc4e0467.jpg" 
             alt="Hero illustration"
-            className="w-full max-w-md md:max-w-full rounded-3xl"
+            className="w-full max-w-md md:max-w-full rounded-3xl  animate-[slideInRight_0.8s_ease-out_forwards]"
           />
         </div>
 
