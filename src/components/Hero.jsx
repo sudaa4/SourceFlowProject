@@ -2,29 +2,29 @@ export default function Hero() {
   return (
     <section
       className="relative text-white py-20 overflow-hidden"
-      style={{ backgroundColor: "#064EA4" }} // Page background
+      style={{ backgroundColor: "#BBBFBF" }} // Page background
     >
-      {/* Top-left pink circle */}
+      {/* Top-left teal circle */}
       <div
         className="absolute -top-32 -left-32 w-64 h-64 rounded-full"
-        style={{ backgroundColor: "#F99D76" }}
+        style={{ backgroundColor: "#05AD98" }}
       ></div>
 
-      {/* Bottom-right yellow circle */}
+      {/* Bottom-right warm accent circle */}
       <div
         className="absolute -bottom-32 -right-32 w-64 h-64 rounded-full"
-        style={{ backgroundColor: "#FCDF69" }}
+        style={{ backgroundColor: "#FFB347" }}
       ></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-10">
         
         {/* Left: Search area */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl text-gray-300 mb-2">
+          <h2 className="text-xl text-[#878787] mb-2">
             Software Recruitment Specialists
           </h2>
 
-          <h1 className="opacity-0 animate-[fadeIn_0.8s_ease-out_forwards] text-4xl font-bold mb-6">
+          <h1 className="opacity-0 animate-[fadeIn_1.0s_ease-out_forwards] text-4xl font-bold mb-6 text-[#048C7A]">
             Elevate your Career
           </h1>
 
@@ -32,11 +32,12 @@ export default function Hero() {
             <input
               type="text"
               placeholder="Search job roles, skills, or companies"
-              className="flex-1 px-4 py-2 text-gray-700 outline-none rounded-md"
+              className="flex-1 px-4 py-2 text-gray-700 outline-none rounded-md fade-up"
+              style={{ animationDelay: "0.5s" }} 
             />
             <button
-              className="px-6 py-2 rounded-md text-white hover:brightness-110"
-              style={{ backgroundColor: "#FCDF69" }}
+              className="px-6 py-2 rounded-md text-white hover:brightness-110 fade-up"
+              style={{ backgroundColor: "#05AD98" , animationDelay: "0.8s"}}
             >
               Search
             </button>
@@ -48,7 +49,7 @@ export default function Hero() {
           <img
             src="/2a5555ba9e7463bd63b976b8b0101bf9fc4e0467.jpg" 
             alt="Hero illustration"
-            className="w-full max-w-md md:max-w-full rounded-3xl  animate-[slideInRight_0.8s_ease-out_forwards]"
+            className="w-full max-w-md md:max-w-full rounded-3xl animate-[slideInRight_1.4s_ease-out_forwards]"
           />
         </div>
 
@@ -56,5 +57,6 @@ export default function Hero() {
     </section>
   );
 }
+
 
 

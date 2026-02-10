@@ -4,10 +4,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow-sm px-4 sm:px-8 py-4 flex items-center justify-between relative">
+    <nav className="w-full bg-[#048C7A] shadow-sm px-4 sm:px-8 py-4 flex items-center justify-between relative">
       
       {/* Company name */}
-      <div className="text-xl font-bold text-blue-600">
+      <div className="text-xl font-bold text-white">
         Software Recruitment co. 
       </div>
 
@@ -18,7 +18,7 @@ export default function Navbar() {
           className="focus:outline-none"
         >
           <svg
-            className="w-6 h-6 text-gray-700"
+            className="w-6 h-6 text-white"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
@@ -43,12 +43,12 @@ export default function Navbar() {
 
       {/* Navigation links & buttons (desktop) */}
       <div className="hidden md:flex md:items-center md:gap-6">
-        <ul className="flex items-center gap-6 text-gray-700">
+        <ul className="flex items-center gap-6 text-white">
           {["For jobseekers", "For Clients", "Sectors", "Resources"].map(
             (item) => (
               <li
                 key={item}
-                className="group flex items-center gap-1 cursor-pointer hover:text-blue-600 transition"
+                className="group flex items-center gap-1 cursor-pointer hover:text-[#05AD98] transition"
               >
                 <span>{item}</span>
                 <svg
@@ -70,10 +70,10 @@ export default function Navbar() {
         </ul>
 
         <div className="flex gap-4">
-          <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded transition duration-300 ease-in-out transform hover:scale-105">
+          <button className="px-4 py-2 border border-[#05AD98] text-[#05AD98] rounded transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#BBF7EF]">
             Upload CV
           </button>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">
+          <button className="bg-[#05AD98] hover:bg-[#048C7A] text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">
             Contact Us
           </button>
         </div>
@@ -81,15 +81,15 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-white shadow-md md:hidden z-10 flex flex-col gap-4 p-4">
-          <ul className="flex flex-col gap-4 text-gray-700">
+        <div className="absolute top-full left-0 w-full bg-[#048C7A] shadow-md md:hidden z-10 flex flex-col gap-4 p-4">
+          <ul className="flex flex-col gap-4 text-white">
             {["For jobseekers", "For Clients", "Sectors", "Resources"].map(
               (item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-1 cursor-pointer hover:text-blue-600 transition"
+                  className="flex items-center gap-1 cursor-pointer hover:text-[#05AD98] transition font-bold"
                 >
-                  <span>{item}</span>
+                  <span className="font-bold">{item}</span>
                   <svg
                     className="w-3 h-3 mt-0.5 transition-transform"
                     fill="none"
@@ -109,10 +109,10 @@ export default function Navbar() {
           </ul>
 
           <div className="flex flex-col gap-2 mt-2">
-            <button className="px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 w-full">
+            <button className="px-4 py-2 bg-[#05AD98] text-white rounded-md hover:bg-[#048C7A] w-full">
               Upload CV
             </button>
-            <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 w-full">
+            <button className="px-4 py-2 bg-[#05AD98] text-white rounded-md hover:bg-[#048C7A] w-full">
               Contact Us
             </button>
           </div>

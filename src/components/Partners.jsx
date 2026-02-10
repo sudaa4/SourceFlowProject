@@ -25,17 +25,22 @@ export default function Partners() {
       alt: "VMWare Logo",
       link: "https://www.vmware.com",
     },
+    {
+      src: "/Google.png",
+      alt: "Google Logo",
+      link: "https://about.google",
+    },
   ];
 
   return (
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-8">
-        <h2 className="text-center text-2xl font-semibold mb-10">
+        <h2 className="text-center text-2xl font-semibold mb-10 text-[#048C7A]">
           Trusted by leading companies
         </h2>
 
         {/* Horizontal scroll container */}
-        <div className="flex space-x-8 overflow-x-auto scrollbar-hide py-4">
+        <div className="flex flex-nowrap gap-8 overflow-x-auto md:overflow-x-auto py-4 max-w-full touch-pan-x">
           {logos.map((logo, index) => (
             <a
               key={index}

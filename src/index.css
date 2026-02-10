@@ -71,7 +71,7 @@ button:focus-visible {
 @keyframes slideInRight {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(120px);
   }
   to {
     opacity: 1;
@@ -83,6 +83,26 @@ button:focus-visible {
   to { opacity: 1; }
 }
 
-body {
-  background: red !important;
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+/* hidden before scroll */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+/* runs when visible */
+.fade-up.show {
+  animation: fadeUp 4.0s ease-out forwards;
+}
+
