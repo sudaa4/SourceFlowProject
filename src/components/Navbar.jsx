@@ -70,7 +70,7 @@ export default function Navbar() {
         </ul>
 
         <div className="flex gap-4">
-          <button className="px-4 py-2 border border-[#05AD98] text-[#05AD98] rounded transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#BBF7EF]">
+          <button className="px-4 py-2 border border-[#05AD98] text-white font-bold rounded transition duration-300 ease-in-out transform hover:scale-105 hover:bg-[#05AD98]">
             Upload CV
           </button>
           <button className="bg-[#05AD98] hover:bg-[#048C7A] text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105">
